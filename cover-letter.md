@@ -4,13 +4,47 @@
 
 Dear Hiring Manager,
 
-[Opening paragraph - Why you're interested in this position]
+**[Opening - Position and Interest]**
+<!-- 
+- どのポジションに応募しているか
+- なぜこのポジションに興味を持ったか
+- Googleや生成AIへの関心
+例：I am writing to express my strong interest in the Senior Software Engineer, Generative AI, Google Cloud AI position...
+-->
 
 
-[Middle paragraph(s) - Your relevant experience and achievements]
+**[Body 1 - Technical Expertise]**
+<!--
+- ML/AI分野での5年以上の経験
+- TensorFlow、PyTorch等のフレームワーク経験
+- ソフトウェア開発5年以上
+- 具体的な実績や成果
+-->
 
 
-[Closing paragraph - What you can bring to Google and next steps]
+**[Body 2 - Solution Architecture & Customer Engagement]**
+<!--
+- テクニカルソリューションアーキテクトとしての経験
+- 顧客対応、デモ・PoC作成の実績
+- クラウド環境での開発経験
+- 技術的課題の解決事例
+-->
+
+
+**[Body 3 - Language & Communication]**
+<!--
+- 日英バイリンガル能力
+- 技術的内容を分かりやすく説明する力
+- ステークホルダーとのコミュニケーション経験
+-->
+
+
+**[Closing - Value Proposition]**
+<!--
+- Google Cloud AIチームに貢献できること
+- 生成AIの未来への期待
+- 面接機会への期待
+-->
 
 
 Sincerely,
@@ -22,14 +56,76 @@ Sincerely,
 
 採用ご担当者様
 
-[導入段落 - このポジションへの関心]
+**[導入 - ポジションと関心]**
+<!--
+- 応募するポジション
+- このポジションに惹かれた理由
+- Googleや生成AIへの思い
+-->
 
 
-[中段落 - 関連する経験と実績]
+**[本文1 - 技術的専門性]**
+<!--
+- ML/AI分野での5年以上の経験
+- TensorFlow、PyTorch等の技術スタック
+- ソフトウェア開発の実績
+- 具体的なプロジェクトや成果
+-->
 
 
-[結び - Googleに貢献できることと次のステップ]
+**[本文2 - ソリューションアーキテクト・顧客対応]**
+<!--
+- テクニカルソリューションアーキテクトとしての経験
+- 顧客への技術サポート、デモ・概念実証の作成
+- クラウド環境での開発
+- 技術的課題の解決例
+-->
+
+
+**[本文3 - 言語力とコミュニケーション]**
+<!--
+- 日英両言語でのビジネス経験
+- 技術的内容を分かりやすく伝える能力
+- 関係者との協働経験
+-->
+
+
+**[結び - 貢献できる価値]**
+<!--
+- Google Cloud AIチームへの貢献
+- 生成AI技術への期待と抱負
+- 面接の機会をいただきたい旨
+-->
 
 
 敬具
 [氏名]
+
+---
+
+## カバーレター作成のポイント
+
+### 1. Opening（導入）
+- 簡潔に興味を示す
+- ポジション名を正確に記載
+- 興味を持った理由を1-2文で
+
+### 2. Body（本文）
+- **技術的専門性**: 求人要件に合致する経験を具体的に
+- **顧客対応・アーキテクト**: テクニカルソリューションアーキテクトとしての実績
+- **言語・コミュニケーション**: バイリンガル能力を強調
+
+### 3. Closing（結び）
+- Google Cloud AIチームに貢献できる価値を明確に
+- 前向きで自信を持った締めくくり
+- 面接の機会を求める
+
+### 4. 長さ
+- 英語版: 300-400語程度
+- 日本語版: 600-800字程度
+- A4用紙1枚に収まる程度
+
+### 5. トーン
+- プロフェッショナルかつ熱意が伝わる
+- 謙虚さと自信のバランス
+- 具体的な実績を盛り込む
