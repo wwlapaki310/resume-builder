@@ -16,7 +16,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f5f5f5;
+            background: #e5e7eb;
             padding: 20px;
         }
 
@@ -42,19 +42,25 @@
             color: white;
         }
 
-        .container {
+        .page {
             max-width: 850px;
-            margin: 0 auto;
+            margin: 0 auto 30px auto;
             background: white;
-            padding: 40px 50px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 50px 60px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            min-height: 1100px;
+            page-break-after: always;
         }
 
-        /* Header */
+        .page:last-of-type {
+            margin-bottom: 20px;
+        }
+
+        /* Header - Page 1 only */
         header {
             text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
             border-bottom: 3px solid #2563eb;
         }
 
@@ -67,7 +73,7 @@
         .subtitle {
             font-size: 1.1em;
             color: #666;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-weight: 500;
         }
 
@@ -75,8 +81,8 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
-            font-size: 0.95em;
+            gap: 15px;
+            font-size: 0.9em;
             color: #555;
         }
 
@@ -92,91 +98,83 @@
         /* Summary */
         .summary {
             background: #f8fafc;
-            padding: 20px;
-            margin-bottom: 30px;
+            padding: 18px;
+            margin-bottom: 25px;
             border-left: 4px solid #2563eb;
-            font-size: 0.95em;
-            line-height: 1.7;
+            font-size: 0.92em;
+            line-height: 1.65;
         }
 
         /* Sections */
         h2 {
             color: #1e40af;
-            font-size: 1.4em;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
+            font-size: 1.35em;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
             border-bottom: 2px solid #e5e7eb;
         }
 
         h3 {
-            font-size: 1.1em;
+            font-size: 1.05em;
             color: #334155;
-            margin-bottom: 5px;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .job-title {
             font-weight: 600;
             color: #1e40af;
+            font-size: 0.95em;
         }
 
         .date {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.88em;
             font-style: italic;
-        }
-
-        .company {
-            font-weight: 600;
-            margin-bottom: 10px;
         }
 
         /* Lists */
         ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
+            margin-left: 18px;
+            margin-bottom: 12px;
         }
 
         li {
-            margin-bottom: 8px;
-            line-height: 1.6;
+            margin-bottom: 6px;
+            line-height: 1.55;
+            font-size: 0.93em;
         }
 
         /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 8px;
+            margin-bottom: 15px;
         }
 
         .skill-item {
-            padding: 8px 0;
+            padding: 6px 0;
+            font-size: 0.92em;
         }
 
         .skill-category {
             font-weight: 600;
             color: #1e40af;
             display: inline-block;
-            min-width: 140px;
+            min-width: 130px;
         }
 
         /* Awards */
         .award {
-            margin-bottom: 12px;
-            line-height: 1.6;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-size: 0.93em;
         }
 
         .award-icon {
-            font-size: 1.2em;
-            margin-right: 8px;
+            font-size: 1.1em;
+            margin-right: 6px;
         }
 
         .award-title {
@@ -186,27 +184,41 @@
 
         /* Education */
         .education-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .degree {
             font-weight: 600;
             color: #1e40af;
+            font-size: 0.95em;
         }
 
         /* Tech Stack */
         .tech-stack {
             background: #f1f5f9;
-            padding: 10px 15px;
-            margin: 10px 0;
-            border-radius: 4px;
-            font-size: 0.9em;
+            padding: 8px 12px;
+            margin: 8px 0;
+            border-radius: 3px;
+            font-size: 0.88em;
             color: #475569;
         }
 
         .tech-label {
             font-weight: 600;
             color: #334155;
+        }
+
+        /* Page header for page 2 */
+        .page-header {
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .page-header h1 {
+            font-size: 1.4em;
+            color: #1e40af;
         }
 
         /* Print Styles */
@@ -220,25 +232,24 @@
                 display: none;
             }
 
-            .container {
+            .page {
                 box-shadow: none;
-                padding: 20px;
+                padding: 40px 50px;
+                margin: 0;
                 max-width: 100%;
+                min-height: 0;
             }
 
-            h2 {
-                page-break-after: avoid;
-            }
-
-            .education-item, .award {
-                page-break-inside: avoid;
+            .page-header {
+                display: none;
             }
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .container {
+            .page {
                 padding: 30px 25px;
+                min-height: auto;
             }
 
             h1 {
@@ -247,12 +258,7 @@
 
             .contact {
                 flex-direction: column;
-                gap: 10px;
-            }
-
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
+                gap: 8px;
             }
         }
     </style>
@@ -263,8 +269,8 @@
         <a href="resume-ja.html">日本語</a>
     </div>
 
-    <div class="container">
-        <!-- Header -->
+    <!-- PAGE 1 -->
+    <div class="page">
         <header>
             <h1>Satoru Akita</h1>
             <div class="subtitle">AI Solutions Architect | 7+ Years ML/AI Experience</div>
@@ -277,21 +283,17 @@
             </div>
         </header>
 
-        <!-- Summary -->
         <div class="summary">
             AI Solutions Architect with <strong>7+ years ML/AI experience</strong> specializing in edge-cloud system integration. Proven Forward-Deployed Engineer at Sony, delivering end-to-end AI solutions from customer requirements gathering to production deployment. Led international partnerships (Raspberry Pi Foundation, Sweden-based Lund AB) and developed <strong>7+ production-ready AI applications</strong>. Strong technical background in Computer Vision, cloud platforms (GCP/AWS/Azure certified), and full-stack development.
         </div>
 
-        <!-- Professional Experience -->
         <h2>Professional Experience</h2>
         
-        <div class="job-header">
-            <h3>Sony Semiconductor Solutions Corporation | Tokyo, Japan</h3>
-        </div>
+        <h3>Sony Semiconductor Solutions Corporation | Tokyo, Japan</h3>
         <div class="job-title">AI Solutions Architect & Edge Sensing Platform Engineer</div>
         <div class="date">April 2019 – Present (6 years)</div>
 
-        <h4 style="margin-top: 15px; color: #1e40af;">Customer-Facing AI Solutions (2021-Present)</h4>
+        <h4 style="margin-top: 12px; color: #1e40af; font-size: 0.95em;">Customer-Facing AI Solutions (2021-Present)</h4>
         <ul>
             <li>Architected and deployed edge-cloud AI systems for enterprise customers including logistics warehouses and manufacturing facilities</li>
             <li>Led <strong>5-person team</strong> developing <strong>7 open-source sample applications</strong> (Check Data Tool, Keypoint Detection, Object Occupancy Rate, Truck Berth DB, GUI Tool, Basic Visualization, Human Detection)</li>
@@ -303,7 +305,7 @@
             <span class="tech-label">Tech Stack:</span> Python, Next.js, FastAPI, PostgreSQL, IMX500, ESP32, Raspberry Pi, Azure, AWS, Docker
         </div>
 
-        <h4 style="margin-top: 15px; color: #1e40af;">Edge AI Development (2019-2021)</h4>
+        <h4 style="margin-top: 12px; color: #1e40af; font-size: 0.95em;">Edge AI Development (2019-2021)</h4>
         <ul>
             <li>Developed 3D pose estimation system using ToF+RGB for yoga guidance, exhibited at <strong>CES 2019</strong></li>
             <li>Built sign language recognition system from ToF sensor images with end-to-end ML pipeline</li>
@@ -314,7 +316,6 @@
             <span class="tech-label">Key Technologies:</span> Computer Vision, TensorFlow, OpenCV, C++, embedded systems
         </div>
 
-        <!-- Technical Skills -->
         <h2>Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-item">
@@ -336,9 +337,15 @@
                 <span class="skill-category">Languages:</span> Japanese (Native), English (Business - TOEIC 800)
             </div>
         </div>
+    </div>
 
-        <!-- Education -->
-        <h2>Education</h2>
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div class="page-header">
+            <h1>Satoru Akita - Page 2</h1>
+        </div>
+
+        <h2 style="margin-top: 0;">Education</h2>
         
         <div class="education-item">
             <h3>Tohoku University | Sendai, Japan</h3>
@@ -361,7 +368,6 @@
             </ul>
         </div>
 
-        <!-- Certifications -->
         <h2>Certifications</h2>
         <div class="skills-grid">
             <div class="skill-item">
@@ -375,7 +381,6 @@
             </div>
         </div>
 
-        <!-- Awards & Publications -->
         <h2>Awards & Publications</h2>
         
         <div class="award">
@@ -398,13 +403,13 @@
             <span class="award-title">SXSW Hackathon Award (2018)</span> | Corporate prize for AI life-log camera
         </div>
 
-        <h4 style="margin-top: 20px; color: #334155;">Publications:</h4>
-        <ul>
+        <h4 style="margin-top: 18px; color: #334155; font-size: 0.95em;">Publications:</h4>
+        <ul style="margin-bottom: 25px;">
             <li>Froemel, J., <strong>Akita, S.</strong>, et al. (2020). <em>Micromachines</em>, 11(12), 1109</li>
             <li>Uchida, T., <strong>Akita, S.</strong>, et al. (2017). <em>Small</em>, 13(44)</li>
         </ul>
 
-        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; font-size: 0.9em;">
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; font-size: 0.88em;">
             Last Updated: February 2026 | <a href="#" onclick="window.print(); return false;" style="color: #2563eb; text-decoration: none;">Print as PDF</a>
         </div>
     </div>
