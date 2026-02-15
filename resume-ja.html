@@ -14,9 +14,9 @@
 
         body {
             font-family: 'Segoe UI', 'Yu Gothic', 'Meiryo', sans-serif;
-            line-height: 1.7;
+            line-height: 1.6;
             color: #333;
-            background: #f5f5f5;
+            background: #e5e7eb;
             padding: 20px;
         }
 
@@ -42,18 +42,24 @@
             color: white;
         }
 
-        .container {
+        .page {
             max-width: 850px;
-            margin: 0 auto;
+            margin: 0 auto 30px auto;
             background: white;
-            padding: 40px 50px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 50px 60px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            min-height: 1100px;
+            page-break-after: always;
+        }
+
+        .page:last-of-type {
+            margin-bottom: 20px;
         }
 
         header {
             text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
             border-bottom: 3px solid #2563eb;
         }
 
@@ -66,7 +72,7 @@
         .subtitle {
             font-size: 1.1em;
             color: #666;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-weight: 500;
         }
 
@@ -74,8 +80,8 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
-            font-size: 0.95em;
+            gap: 15px;
+            font-size: 0.9em;
             color: #555;
         }
 
@@ -90,75 +96,79 @@
 
         .summary {
             background: #f8fafc;
-            padding: 20px;
-            margin-bottom: 30px;
+            padding: 18px;
+            margin-bottom: 25px;
             border-left: 4px solid #2563eb;
-            font-size: 0.95em;
-            line-height: 1.7;
+            font-size: 0.92em;
+            line-height: 1.65;
         }
 
         h2 {
             color: #1e40af;
-            font-size: 1.4em;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
+            font-size: 1.35em;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
             border-bottom: 2px solid #e5e7eb;
         }
 
         h3 {
-            font-size: 1.1em;
+            font-size: 1.05em;
             color: #334155;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .job-title {
             font-weight: 600;
             color: #1e40af;
+            font-size: 0.95em;
         }
 
         .date {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.88em;
             font-style: italic;
         }
 
         ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
+            margin-left: 18px;
+            margin-bottom: 12px;
         }
 
         li {
-            margin-bottom: 8px;
-            line-height: 1.6;
+            margin-bottom: 6px;
+            line-height: 1.55;
+            font-size: 0.93em;
         }
 
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 8px;
+            margin-bottom: 15px;
         }
 
         .skill-item {
-            padding: 8px 0;
+            padding: 6px 0;
+            font-size: 0.92em;
         }
 
         .skill-category {
             font-weight: 600;
             color: #1e40af;
             display: inline-block;
-            min-width: 180px;
+            min-width: 170px;
         }
 
         .award {
-            margin-bottom: 12px;
-            line-height: 1.6;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-size: 0.93em;
         }
 
         .award-icon {
-            font-size: 1.2em;
-            margin-right: 8px;
+            font-size: 1.1em;
+            margin-right: 6px;
         }
 
         .award-title {
@@ -167,26 +177,39 @@
         }
 
         .education-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .degree {
             font-weight: 600;
             color: #1e40af;
+            font-size: 0.95em;
         }
 
         .tech-stack {
             background: #f1f5f9;
-            padding: 10px 15px;
-            margin: 10px 0;
-            border-radius: 4px;
-            font-size: 0.9em;
+            padding: 8px 12px;
+            margin: 8px 0;
+            border-radius: 3px;
+            font-size: 0.88em;
             color: #475569;
         }
 
         .tech-label {
             font-weight: 600;
             color: #334155;
+        }
+
+        .page-header {
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .page-header h1 {
+            font-size: 1.4em;
+            color: #1e40af;
         }
 
         @media print {
@@ -199,16 +222,23 @@
                 display: none;
             }
 
-            .container {
+            .page {
                 box-shadow: none;
-                padding: 20px;
+                padding: 40px 50px;
+                margin: 0;
                 max-width: 100%;
+                min-height: 0;
+            }
+
+            .page-header {
+                display: none;
             }
         }
 
         @media (max-width: 768px) {
-            .container {
+            .page {
                 padding: 30px 25px;
+                min-height: auto;
             }
 
             h1 {
@@ -217,7 +247,7 @@
 
             .contact {
                 flex-direction: column;
-                gap: 10px;
+                gap: 8px;
             }
         }
     </style>
@@ -228,7 +258,8 @@
         <a href="resume-ja.html">日本語</a>
     </div>
 
-    <div class="container">
+    <!-- ページ 1 -->
+    <div class="page">
         <header>
             <h1>秋田 賢（あきた さとる）</h1>
             <div class="subtitle">AIソリューションアーキテクト | ML/AI経験7年以上</div>
@@ -251,7 +282,7 @@
         <div class="job-title">AIソリューションアーキテクト / エッジセンシングプラットフォームエンジニア</div>
         <div class="date">2019年4月 – 現在（6年）</div>
 
-        <h4 style="margin-top: 15px; color: #1e40af;">顧客対応型AIソリューション（2021年-現在）</h4>
+        <h4 style="margin-top: 12px; color: #1e40af; font-size: 0.95em;">顧客対応型AIソリューション（2021年-現在）</h4>
         <ul>
             <li>物流倉庫・製造施設等のエンタープライズ顧客向けエッジ-クラウドAIシステムを設計・導入</li>
             <li><strong>5人チーム</strong>をリードし<strong>7種類のオープンソースサンプルアプリケーション</strong>を開発（Check Data Tool、Keypoint Detection、Object Occupancy Rate、Truck Berth DB、GUIツール、Basic Visualization、Human Detection）</li>
@@ -263,7 +294,7 @@
             <span class="tech-label">技術スタック:</span> Python、Next.js、FastAPI、PostgreSQL、IMX500、ESP32、Raspberry Pi、Azure、AWS、Docker
         </div>
 
-        <h4 style="margin-top: 15px; color: #1e40af;">エッジAI開発（2019年-2021年）</h4>
+        <h4 style="margin-top: 12px; color: #1e40af; font-size: 0.95em;">エッジAI開発（2019年-2021年）</h4>
         <ul>
             <li>ToF+RGB画像を用いたヨガガイダンス向け3D姿勢推定システムを開発、<strong>CES 2019で展示</strong></li>
             <li>ToFセンサー画像からの手話認識システムをエンドツーエンドMLパイプラインで構築</li>
@@ -295,8 +326,15 @@
                 <span class="skill-category">言語能力:</span> 日本語（ネイティブ）、英語（ビジネスレベル - TOEIC 800点）
             </div>
         </div>
+    </div>
 
-        <h2>学歴</h2>
+    <!-- ページ 2 -->
+    <div class="page">
+        <div class="page-header">
+            <h1>秋田 賢 - ページ 2</h1>
+        </div>
+
+        <h2 style="margin-top: 0;">学歴</h2>
         
         <div class="education-item">
             <h3>東北大学 | 仙台市</h3>
@@ -354,13 +392,13 @@
             <span class="award-title">SXSW ハッカソン企業賞（2018年）</span> | AIライフログカメラで受賞
         </div>
 
-        <h4 style="margin-top: 20px; color: #334155;">論文:</h4>
-        <ul>
+        <h4 style="margin-top: 18px; color: #334155; font-size: 0.95em;">論文:</h4>
+        <ul style="margin-bottom: 25px;">
             <li>Froemel, J., <strong>秋田賢</strong>, et al. (2020). <em>Micromachines</em>, 11(12), 1109</li>
             <li>Uchida, T., <strong>秋田賢</strong>, et al. (2017). <em>Small</em>, 13(44)</li>
         </ul>
 
-        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; font-size: 0.9em;">
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; font-size: 0.88em;">
             最終更新: 2026年2月 | <a href="#" onclick="window.print(); return false;" style="color: #2563eb; text-decoration: none;">PDF印刷</a>
         </div>
     </div>
