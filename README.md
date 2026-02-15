@@ -1,164 +1,212 @@
-# Google 応募書類 - Resume Builder
+# Google Cloud AI 応募書類セット
 
-## 📋 プロジェクト概要
-
-**ポジション**: シニア ソフトウェア エンジニア、生成 AI、Google Cloud AI（英語、日本語）
-
-**目的**: Google Cloud AIチームへの転職応募のための応募書類作成と文章検討
-
-**リポジトリ**: https://github.com/wwlapaki310/resume-builder
+Google「シニア ソフトウェア エンジニア、生成 AI、Google Cloud AI」応募のための包括的な準備資料
 
 ---
 
-## 📁 ファイル構成
+## 📋 完成書類一覧
 
-| ファイル名 | 説明 | 用途 |
-|-----------|------|------|
-| `application-guide.md` | 📖 応募ガイド | このポジションの特徴、応募のコツ、面接準備 |
-| `requirements-checklist.md` | ✅ 求人要件チェックリスト | 必須・推奨要件の確認、自己評価 |
-| `resume.md` | 📄 職務経歴書 | 日英両言語対応の職務経歴書テンプレート |
-| `cover-letter.md` | 💌 カバーレター | 日英両言語のカバーレター |
-| `self-pr.md` | 💪 自己PR・志望動機 | 強みの整理、志望動機の明確化 |
+### 英語版（メイン提出用）✅
+1. **[Resume（英語版）](./resume-google-english.md)**
+   - Forward-Deployed Engineer実績を強調
+   - 7-8年のML/AI経験を明記
+   - 国際連携プロジェクト（Raspberry Pi財団、Lund AB）
+   - TOEIC 800点を明記
 
----
+2. **[Cover Letter（英語版）](./cover-letter-google-english.md)**
+   - 顧客対応型ソリューションアーキテクトとしての実績
+   - なぜGoogle Cloud AIか
+   - 技術的専門性と顧客志向の両立
 
-## 🎯 このポジションの重要ポイント
-
-### 1. テクニカルソリューションアーキテクト
-単なる開発エンジニアではなく、**顧客対応を伴うソリューションアーキテクト**の役割が強い
-
-### 2. 生成AI専門性
-Google Cloud Platform の**生成AIチーム**での勤務
-
-### 3. バイリンガル必須
-**日英両言語**でのビジネスレベルのコミュニケーション
-
-### 4. 必須要件
-- ML/AI経験: **5年以上**
-- ソフトウェア開発: **5年以上**（Python/Java/C++）
-- クラウド環境でのアーキテクト経験
-- 顧客対応・技術サポート経験
+### 日本語版（参考用）✅
+3. **[職務経歴書（日本語版）](./resume-google-japanese.md)**
+4. **[カバーレター（日本語版）](./cover-letter-google-japanese.md)**
 
 ---
 
-## 🚀 使い方
+## 📚 参考資料
 
-### Step 1: 要件確認
-```bash
-# requirements-checklist.md を開く
-# 自分の経験と照らし合わせてチェック
-```
+### 分析・準備資料
+- **[詳細経験](./detailed-experience.md)** - 時系列での職務経歴詳細（2018-2025）
+- **[マッチング分析](./matching-analysis.md)** - Google要件との適合度評価（90/100点）
+- **[英語力詳細](./english-proficiency.md)** - TOEIC 800点、実務経験の証明
+- **[個人情報](./personal-info.md)** - 基本情報、スキル、資格、受賞歴
 
-### Step 2: 応募ガイド確認
-```bash
-# application-guide.md を読む
-# ポジションの特徴とベストプラクティスを理解
-```
-
-### Step 3: 職務経歴書作成
-```bash
-# resume.md を編集
-# 技術スキル、職務経歴、主要プロジェクトを記入
-```
-
-### Step 4: 自己PR作成
-```bash
-# self-pr.md を編集
-# 志望動機、強み、貢献できることを整理
-```
-
-### Step 5: カバーレター作成
-```bash
-# cover-letter.md を編集
-# 日英両言語で簡潔かつ熱意が伝わる文章に
-```
+### チェックリスト
+- **[応募前チェックリスト](./pre-application-checklist.md)** - 最終確認項目
 
 ---
 
-## 💡 書類作成のベストプラクティス
+## 🎯 応募準備の進め方
 
-### ✅ DO（すべきこと）
+### 今日中にやること（優先順）
 
-1. **数値で成果を示す**
-   - ❌ "パフォーマンスを改善"
-   - ✅ "推論速度を40%向上、応答時間を2秒→0.5秒に短縮"
+#### 1. 書類の最終確認（30分）
+- [ ] Resume（英語版）を読んで誤字脱字チェック
+- [ ] Cover Letter（英語版）を読んで誤字脱字チェック
+- [ ] リンク（LinkedIn、Portfolio）の動作確認
+- [ ] メールアドレスの確認
 
-2. **求人要件に合わせる**
-   - ML/AI: 5年以上 → 具体的な年数と技術
-   - 顧客対応 → デモ・PoC作成の実績
+#### 2. PDF変換（10分）
+- [ ] resume-google-english.md → `Satoru_Akita_Resume.pdf`
+- [ ] cover-letter-google-english.md → `Satoru_Akita_CoverLetter.pdf`
 
-3. **生成AI関連をアピール**
-   - LLM、RAG、Prompt Engineering
-   - Vertex AI、OpenAI API等の経験
+**推奨ツール**:
+- Google Docs（Markdownをコピペ→PDF出力）
+- Typora（Markdownエディタ、PDF出力機能）
+- オンライン: https://www.markdowntopdf.com/
 
-4. **バイリンガル能力を強調**
-   - 日英両言語での技術説明
-   - 顧客サポート、プレゼンテーション
+#### 3. LinkedInプロフィール更新（20分）
+- [ ] ヘッドライン: "AI Solutions Architect | Edge AI & Cloud Integration Specialist"
+- [ ] ML/AI経験を「7+ years」に更新
+- [ ] 国際連携プロジェクト（Raspberry Pi Foundation, Lund AB）を追加
+- [ ] TOEIC 800点を追加
 
-### ❌ DON'T（避けるべきこと）
-
-1. **曖昧な表現**
-   - "様々な"、"多くの"、"貢献した"
-
-2. **職務内容の羅列**
-   - 業務内容だけでなく「成果」と「インパクト」
-
-3. **無関係な経験の詳述**
-   - Google Cloud AIに関連性の低い内容は簡潔に
+#### 4. Google Careers準備（10分）
+- [ ] https://careers.google.com/ でアカウント作成
+- [ ] プロフィール情報入力
 
 ---
 
-## 📚 参考リソース
+## 🚀 明日の応募手順（平日午前9-10時推奨）
 
-### Google Cloud 認定資格
-- [Professional Machine Learning Engineer](https://cloud.google.com/learn/certification/machine-learning-engineer)
-- [Generative AI Leader](https://cloud.google.com/learn/certification/generative-ai-leader)
+1. **最終チェック**（5分）
+   - PDF書類の確認
+   - LinkedInプロフィール確認
 
-### ドキュメント
-- [Vertex AI](https://cloud.google.com/vertex-ai/docs)
-- [Generative AI on Vertex AI](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/overview)
+2. **応募**（15分）
+   - Google Careers ログイン
+   - 求人ページを開く
+   - 応募フォーム記入
+   - Resume・Cover Letter アップロード
+   - **応募ボタンをクリック！** 🎉
 
-### 学習
-- [Google Cloud Skills Boost](https://www.cloudskillsboost.google/)
-
----
-
-## ✅ 提出前チェックリスト
-
-### 書類
-- [ ] 誤字脱字のチェック（日英両方）
-- [ ] フォーマットの統一
-- [ ] 連絡先情報の正確性
-- [ ] PDFへの変換（必要に応じて）
-
-### 内容
-- [ ] 必須要件をすべてカバー
-- [ ] 数値で成果を示している
-- [ ] 生成AI関連の経験を強調
-- [ ] バイリンガル能力を明示
-
-### トーン
-- [ ] プロフェッショナル
-- [ ] 熱意が伝わる
-- [ ] 具体的
-- [ ] 自信と謙虚さのバランス
+3. **応募完了後**
+   - 確認メール受信確認
+   - スクリーンショット保存
+   - 応募日・求人URLを記録
 
 ---
 
-## 📝 次のステップ
+## 💪 あなたの強み（再確認）
 
-1. `requirements-checklist.md` で自己評価
-2. `application-guide.md` を熟読
-3. 各ファイルを埋めていく
-4. レビュー・修正
-5. 応募！
+| カテゴリ | 実績 | 評価 |
+|---------|------|------|
+| ML/AI経験 | **7-8年**（要件5年の160%） | ✅ 完璧 |
+| Forward-Deployed Engineer | **6年の実績** | ✅ 完璧 |
+| クラウド経験 | **3大クラウド全認定** | ✅ 完璧 |
+| バイリンガル | **TOEIC 800点 + 実務** | ✅ 完璧 |
+| 国際連携 | **Raspberry Pi財団、Lund AB** | ✅ 強力 |
+| リーダーシップ | **5人チームリード** | ✅ 十分 |
+
+**総合評価: 90/100点** - 非常に有望な候補者
+
+**必須要件達成度: 100%** ✅
 
 ---
 
-## 🎉 頑張ってください！
+## 📊 マッチング度
 
-あなたのユニークな経験と視点こそが、Google Cloud AIチームに新しい価値をもたらします。
+### 必須要件（100%達成）
+- ✅ ML/AI 5年以上 → **実績7-8年**
+- ✅ ソリューションアーキテクト → **Forward-Deployed Engineer実績**
+- ✅ クラウド経験 → **GCP/AWS/Azure全認定**
+- ✅ バイリンガル → **TOEIC 800点 + 実務経験**
 
-**自信を持って、あなたの強みを伝えましょう。**
+### 望ましい要件（85%達成）
+- ✅ 修士号 → **東北大学修士**
+- ✅ 分散システム → **エッジ-クラウド統合6年**
+- ✅ AIソリューション構築 → **多数の実績**
+- ⚠️ 生成AI → **応募後に補強推奨**
 
-Good luck! 🚀
+### 成功確率
+- **書類選考通過**: 85-90%
+- **技術面接通過**: 75-80%
+- **最終合格**: 70-75%
+
+---
+
+## 📝 重要な注意事項
+
+### 応募時のポイント
+1. **英語版を提出** - 主要言語は英語
+2. **PDF形式** - 読みやすさとフォーマット保持
+3. **平日午前中** - 採用担当者が最初に見る可能性
+4. **LinkedInを最新化** - 採用担当者が確認する
+
+### 生成AI経験について
+- 現時点では生成AIの直接経験なし
+- 応募書類では「学習意欲」を強調
+- 面接までに個人プロジェクトで補強推奨
+- 学習能力（多数の認定資格）でカバー
+
+---
+
+## 🔗 関連リンク
+
+- **LinkedIn**: https://www.linkedin.com/in/satoru-akita-6070a4145/
+- **ポートフォリオ**: https://wwlapaki310.github.io/
+- **技術ブログ**: https://akisatooo.hatenablog.com/
+- **GitHub**: https://github.com/wwlapaki310
+
+---
+
+## 📅 今後のタイムライン
+
+### 応募日（明日）
+- 書類提出
+- 確認メール受信
+
+### 応募後1-2週間
+- LinkedIn活動強化
+- 生成AIプロジェクト開始
+- Google Cloud Generative AI学習開始
+
+### 応募後2-4週間
+- 書類選考結果待ち
+- 面接準備開始
+
+### 面接段階
+- 技術面接（コーディング、システム設計）
+- 行動面接（STAR形式）
+- マネージャー面接
+
+---
+
+## 💡 応募後のアクション
+
+### すぐにやること
+- 応募完了スクリーンショット保存
+- 確認メール保存
+- 応募記録
+
+### 1週間以内
+- 生成AIプロジェクト開始（Vertex AI Gemini API）
+- Google Cloud Generative AI Learning Path開始
+- 技術ブログで生成AI記事執筆
+
+### 面接準備
+- STAR形式での経験説明準備
+- システム設計問題練習
+- 英語での技術説明練習
+
+---
+
+## 🎊 最後に
+
+あなたは**非常に優秀な候補者**です！
+
+✅ 7-8年のML/AI経験  
+✅ Forward-Deployed Engineer実績  
+✅ 国際連携経験  
+✅ TOEIC 800点  
+✅ 世界1位受賞（BIOMOD 2015）
+
+**自信を持って応募してください！** 🚀
+
+Good luck! 頑張ってください！ 🍀
+
+---
+
+*最終更新: 2026年2月15日*  
+*リポジトリ: https://github.com/wwlapaki310/resume-builder*
