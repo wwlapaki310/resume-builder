@@ -1,4 +1,4 @@
-# 秋田 悟（あきた さとる）
+# 秋田 賢（あきた さとる）
 **AIソリューションアーキテクト | ML/AI経験7年以上**
 
 📧 wwlap24@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/satoru-akita-6070a4145/) | 💻 [GitHub](https://github.com/wwlapaki310) | 📝 [Blog](https://akisatooo.hatenablog.com/)  
@@ -79,8 +79,8 @@
 🚀 **SXSW ハッカソン企業賞（2018年）** | AIライフログカメラで受賞
 
 **論文:**  
-- Froemel, J., **秋田悟**, et al. (2020). *Micromachines*, 11(12), 1109  
-- Uchida, T., **秋田悟**, et al. (2017). *Small*, 13(44)
+- Froemel, J., **秋田賢**, et al. (2020). *Micromachines*, 11(12), 1109  
+- Uchida, T., **秋田賢**, et al. (2017). *Small*, 13(44)
 
 ---
 
