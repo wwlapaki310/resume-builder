@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋田 賢 - AIソリューションアーキテクト 履歴書</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            background: white;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .contact {
+            font-size: 11px;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .contact a {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .contact a:hover {
+            color: #2c3e50;
+        }
+        
+        .contact i {
+            margin-right: 4px;
+        }
+        
+        /* Two Column Layout */
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        /* Section Styles */
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        h2 {
+            font-size: 14px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1.5px solid #3498db;
+        }
+        
+        h3 {
+            font-size: 12px;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+        
+        .job-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .job-location {
+            font-size: 10px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .job-period {
+            font-size: 10px;
+            color: #7f8c8d;
+        }
+        
+        ul {
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+        
+        li {
+            font-size: 10.5px;
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+            font-size: 10.5px;
+        }
+        
+        .skill-category {
+            margin-bottom: 4px;
+        }
+        
+        .skill-category strong {
+            color: #2c3e50;
+        }
+        
+        /* Right Column */
+        .right-column {
+            font-size: 10.5px;
+        }
+        
+        .right-column h3 {
+            font-size: 11px;
+            margin-bottom: 3px;
+        }
+        
+        .right-column p {
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .education-item {
+            margin-bottom: 12px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .institution {
+            color: #555;
+            font-size: 10px;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-size: 9px;
+            font-style: italic;
+        }
+        
+        .cert-item, .award-item {
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .interests {
+            font-size: 10px;
+            color: #555;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                margin: 0;
+                padding: 20px 30px;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>秋田 賢 (Satoru Akita)</h1>
+            <div class="contact">
+                <span><i class="fas fa-envelope"></i> satoakita@gmail.com</span>
+                <span><i class="fas fa-phone"></i> +81-90-2883-5083</span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/wwlapaki310" target="_blank">wwlapaki310</a></span>
+                <span><i class="fab fa-github"></i> <a href="https://github.com/wwlapaki310" target="_blank">wwlapaki310</a></span>
+            </div>
+        </header>
+
+        <!-- Two Column Content -->
+        <div class="content">
+            <!-- Left Column (2/3) -->
+            <div class="left-column">
+                <!-- Technical Skills -->
+                <section class="section">
+                    <h2>技術スキル</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category"><strong>プログラミング言語:</strong> Python (6年), C++ (5年), JavaScript, Bash</div>
+                        <div class="skill-category"><strong>機械学習・AI:</strong> PyTorch, TensorFlow, OpenCV, MediaPipe, エッジAI最適化</div>
+                        <div class="skill-category"><strong>クラウド・インフラ:</strong> Azure (IoT Hub, Functions), AWS, Docker, CI/CD, MLOpsパイプライン</div>
+                        <div class="skill-category"><strong>専門分野:</strong> コンピュータビジョン, エッジ-クラウドハイブリッドシステム, 分散アーキテクチャ, データ構造・アルゴリズム</div>
+                    </div>
+                </section>
+
+                <!-- Professional Experience -->
+                <section class="section">
+                    <h2>職務経歴</h2>
+                    
+                    <!-- Sony -->
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">AIソリューションアーキテクト</span>
+                            <span class="job-location">| ソニーセミコンダクタソリューションズ株式会社, 東京</span>
+                        </div>
+                        <span class="job-period">2019年4月 - 現在</span>
+                    </div>
+                    <ul>
+                        <li><strong>5名の開発チームを指揮</strong>し、エッジAIの制約（IMX500の3.09 TOPS、DNNモデルサイズ制限）に対応。<strong>セブンイレブン・ジャパンのデジタルサイネージを含むエンタープライズ顧客に採用された7つの本番対応アプリケーションを開発</strong></li>
+                        <li><strong>3年間の物流AI導入をリード</strong>し、複雑な多者間要件（倉庫オペレーター、トラック運転手、管理者）に対応。<strong>公開発表されたエンタープライズ顧客向けに4つの統合監視システム</strong>（バース空き状況、トラック積載、入出庫、かご状態）を提供</li>
+                        <li><strong>分散エッジ-クラウドハイブリッドソリューションを設計</strong>し、IMX500 AIカメラとAzure/AWSを統合。<strong>2つの公開発表されたエンタープライズクライアント</strong>（セブンイレブン・ジャパン、物流倉庫）向けにスケーラブルな展開を実現</li>
+                        <li><strong>エンドツーエンドMLパイプラインを構築</strong>し、自動データ収集、モデル学習、デプロイメントワークフローを実装。<strong>開発サイクル時間を短縮し継続的改善を実現</strong></li>
+                        <li><strong>Raspberry Pi財団およびスウェーデンのLund AB社との戦略的国際パートナーシップを確立</strong>し、<strong>IMX500プラットフォーム周辺のグローバル開発者エコシステムを可能にするOSSを公開</strong></li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Right Column (1/3) -->
+            <div class="right-column">
+                <!-- Education -->
+                <section class="section">
+                    <h2>学歴</h2>
+                    <div class="education-item">
+                        <div class="degree">工学修士（ロボティクス）</div>
+                        <div class="institution">東北大学</div>
+                        <div class="date">2017年 - 2019年</div>
+                        <p style="margin-top: 4px; font-size: 9.5px;">修士論文: 遺伝的アルゴリズムを用いた群ロボット制御</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="degree">工学士（機械工学）</div>
+                        <div class="institution">東北大学</div>
+                        <div class="date">2013年 - 2017年</div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="section">
+                    <h2>資格</h2>
+                    <div class="cert-item">
+                        <strong>Azure AI Engineer Associate</strong><br>
+                        Microsoft (2022年)
+                    </div>
+                    <div class="cert-item">
+                        <strong>TOEIC スコア: 800点</strong><br>
+                        英語能力 (2024年)
+                    </div>
+                </section>
+
+                <!-- Awards & Publications -->
+                <section class="section">
+                    <h2>受賞・論文発表</h2>
+                    <div class="award-item">
+                        <strong>金メダル受賞, BIOMOD 2015</strong><br>
+                        国際生体分子設計コンペティション, ハーバード大学
+                    </div>
+                    <div class="award-item">
+                        <strong>論文発表:</strong> ロボティクスおよび群知能に関する査読付き論文3本
+                    </div>
+                </section>
+
+                <!-- Leadership & Community -->
+                <section class="section">
+                    <h2>リーダーシップ</h2>
+                    <div class="award-item">
+                        <strong>創設者・主催者</strong><br>
+                        全脳アーキテクチャ若手の会（東北支部, 2018年）
+                    </div>
+                    <div class="award-item">
+                        <strong>技術ワークショップリーダー</strong><br>
+                        顧客向けトレーニングおよび社内技術ワークショップを実施
+                    </div>
+                </section>
+
+                <!-- Interests -->
+                <section class="section">
+                    <h2>関心分野</h2>
+                    <div class="interests">
+                        分散システム, MLOps, エッジAI最適化, オープンソース貢献
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
