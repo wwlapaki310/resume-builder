@@ -3,414 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Satoru Akita - AI Solutions Architect with 7+ years ML/AI experience">
-    <title>Satoru Akita - Resume</title>
+    <title>Satoru Akita - AI Solutions Architect Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.4;
             color: #333;
-            background: #e5e7eb;
-            padding: 20px;
+            background: #f5f5f5;
         }
-
-        .language-selector {
+        
+        .container {
             max-width: 850px;
-            margin: 0 auto 20px auto;
-            text-align: right;
-        }
-
-        .language-selector a {
-            padding: 8px 16px;
+            margin: 20px auto;
             background: white;
-            color: #2563eb;
-            text-decoration: none;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-left: 10px;
-            font-weight: 500;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
-        .language-selector a:hover {
-            background: #2563eb;
-            color: white;
-        }
-
-        .page {
-            max-width: 850px;
-            margin: 0 auto 30px auto;
-            background: white;
-            padding: 50px 60px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.15);
-            min-height: 1100px;
-            page-break-after: always;
-        }
-
-        .page:last-of-type {
-            margin-bottom: 20px;
-        }
-
-        /* Header - Page 1 only */
+        
+        /* Header */
         header {
             text-align: center;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 3px solid #2563eb;
+            border-bottom: 2px solid #2c3e50;
         }
-
+        
         h1 {
-            font-size: 2.2em;
-            margin-bottom: 5px;
-            color: #1e40af;
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 8px;
         }
-
-        .subtitle {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 12px;
-            font-weight: 500;
-        }
-
+        
         .contact {
+            font-size: 11px;
+            color: #555;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
             gap: 15px;
-            font-size: 0.9em;
-            color: #555;
+            flex-wrap: wrap;
         }
-
+        
         .contact a {
-            color: #2563eb;
+            color: #555;
             text-decoration: none;
         }
-
+        
         .contact a:hover {
-            text-decoration: underline;
+            color: #2c3e50;
         }
-
-        /* Summary */
-        .summary {
-            background: #f8fafc;
-            padding: 18px;
-            margin-bottom: 25px;
-            border-left: 4px solid #2563eb;
-            font-size: 0.92em;
-            line-height: 1.65;
+        
+        .contact i {
+            margin-right: 4px;
         }
-
-        /* Sections */
+        
+        /* Two Column Layout */
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        /* Section Styles */
+        .section {
+            margin-bottom: 18px;
+        }
+        
         h2 {
-            color: #1e40af;
-            font-size: 1.35em;
-            margin-top: 20px;
-            margin-bottom: 12px;
-            padding-bottom: 6px;
-            border-bottom: 2px solid #e5e7eb;
+            font-size: 14px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1.5px solid #3498db;
         }
-
+        
         h3 {
-            font-size: 1.05em;
-            color: #334155;
+            font-size: 12px;
+            color: #2c3e50;
             margin-bottom: 4px;
         }
-
-        .job-title {
-            font-weight: 600;
-            color: #1e40af;
-            font-size: 0.95em;
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
         }
-
-        .date {
-            color: #666;
-            font-size: 0.88em;
+        
+        .job-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .job-location {
+            font-size: 10px;
+            color: #7f8c8d;
             font-style: italic;
         }
-
-        /* Lists */
+        
+        .job-period {
+            font-size: 10px;
+            color: #7f8c8d;
+        }
+        
         ul {
-            margin-left: 18px;
-            margin-bottom: 12px;
+            margin-left: 15px;
+            margin-top: 5px;
         }
-
+        
         li {
-            margin-bottom: 6px;
-            line-height: 1.55;
-            font-size: 0.93em;
+            font-size: 10.5px;
+            margin-bottom: 3px;
+            line-height: 1.4;
         }
-
-        /* Skills */
+        
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 8px;
-            margin-bottom: 15px;
+            gap: 6px;
+            font-size: 10.5px;
         }
-
-        .skill-item {
-            padding: 6px 0;
-            font-size: 0.92em;
-        }
-
+        
         .skill-category {
-            font-weight: 600;
-            color: #1e40af;
-            display: inline-block;
-            min-width: 130px;
+            margin-bottom: 4px;
         }
-
-        /* Awards */
-        .award {
-            margin-bottom: 10px;
-            line-height: 1.5;
-            font-size: 0.93em;
+        
+        .skill-category strong {
+            color: #2c3e50;
         }
-
-        .award-icon {
-            font-size: 1.1em;
-            margin-right: 6px;
+        
+        /* Right Column */
+        .right-column {
+            font-size: 10.5px;
         }
-
-        .award-title {
-            font-weight: 600;
-            color: #334155;
+        
+        .right-column h3 {
+            font-size: 11px;
+            margin-bottom: 3px;
         }
-
-        /* Education */
+        
+        .right-column p {
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
         .education-item {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
-
+        
         .degree {
-            font-weight: 600;
-            color: #1e40af;
-            font-size: 0.95em;
+            font-weight: bold;
+            color: #2c3e50;
         }
-
-        /* Tech Stack */
-        .tech-stack {
-            background: #f1f5f9;
-            padding: 8px 12px;
-            margin: 8px 0;
-            border-radius: 3px;
-            font-size: 0.88em;
-            color: #475569;
+        
+        .institution {
+            color: #555;
+            font-size: 10px;
         }
-
-        .tech-label {
-            font-weight: 600;
-            color: #334155;
+        
+        .date {
+            color: #7f8c8d;
+            font-size: 9px;
+            font-style: italic;
         }
-
-        /* Page header for page 2 */
-        .page-header {
-            text-align: center;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #e5e7eb;
+        
+        .cert-item, .award-item {
+            margin-bottom: 8px;
+            line-height: 1.3;
         }
-
-        .page-header h1 {
-            font-size: 1.4em;
-            color: #1e40af;
+        
+        .interests {
+            font-size: 10px;
+            color: #555;
         }
-
+        
         /* Print Styles */
         @media print {
             body {
                 background: white;
-                padding: 0;
             }
-
-            .language-selector {
-                display: none;
-            }
-
-            .page {
-                box-shadow: none;
-                padding: 40px 50px;
+            .container {
                 margin: 0;
-                max-width: 100%;
-                min-height: 0;
-            }
-
-            .page-header {
-                display: none;
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .page {
-                padding: 30px 25px;
-                min-height: auto;
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            .contact {
-                flex-direction: column;
-                gap: 8px;
+                padding: 20px 30px;
+                box-shadow: none;
             }
         }
     </style>
 </head>
 <body>
-    <div class="language-selector">
-        <a href="index.html">English</a>
-        <a href="resume-ja.html">日本語</a>
-    </div>
-
-    <!-- PAGE 1 -->
-    <div class="page">
+    <div class="container">
+        <!-- Header -->
         <header>
-            <h1>Satoru Akita</h1>
-            <div class="subtitle">AI Solutions Architect | 7+ Years ML/AI Experience</div>
+            <h1>Satoru Akita (秋田 賢)</h1>
             <div class="contact">
-                <span>📧 wwlap24@gmail.com</span>
-                <span>🔗 <a href="https://www.linkedin.com/in/satoru-akita-6070a4145/" target="_blank">LinkedIn</a></span>
-                <span>💻 <a href="https://github.com/wwlapaki310" target="_blank">GitHub</a></span>
-                <span>📝 <a href="https://akisatooo.hatenablog.com/" target="_blank">Blog</a></span>
-                <span>📍 Greater Tokyo Area, Japan</span>
+                <span><i class="fas fa-envelope"></i> satoakita@gmail.com</span>
+                <span><i class="fas fa-phone"></i> +81-90-2883-5083</span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/wwlapaki310" target="_blank">wwlapaki310</a></span>
+                <span><i class="fab fa-github"></i> <a href="https://github.com/wwlapaki310" target="_blank">wwlapaki310</a></span>
             </div>
         </header>
 
-        <div class="summary">
-            AI Solutions Architect with <strong>7+ years ML/AI experience</strong> specializing in edge-cloud system integration. Proven Forward-Deployed Engineer at Sony, delivering end-to-end AI solutions from customer requirements gathering to production deployment. Led international partnerships (Raspberry Pi Foundation, Sweden-based Lund AB) and developed <strong>7+ production-ready AI applications</strong>. Strong technical background in Computer Vision, cloud platforms (GCP/AWS/Azure certified), and full-stack development.
-        </div>
+        <!-- Two Column Content -->
+        <div class="content">
+            <!-- Left Column (2/3) -->
+            <div class="left-column">
+                <!-- Technical Skills -->
+                <section class="section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category"><strong>Languages:</strong> Python (6y), C++ (5y), JavaScript, Bash</div>
+                        <div class="skill-category"><strong>ML/AI:</strong> PyTorch, TensorFlow, OpenCV, MediaPipe, Edge AI optimization</div>
+                        <div class="skill-category"><strong>Cloud & Infrastructure:</strong> Azure (IoT Hub, Functions), AWS, Docker, CI/CD, MLOps pipelines</div>
+                        <div class="skill-category"><strong>Specialization:</strong> Computer Vision, Edge-Cloud hybrid systems, Distributed architecture, Data structures & algorithms</div>
+                    </div>
+                </section>
 
-        <h2>Professional Experience</h2>
-        
-        <h3>Sony Semiconductor Solutions Corporation | Tokyo, Japan</h3>
-        <div class="job-title">AI Solutions Architect & Edge Sensing Platform Engineer</div>
-        <div class="date">April 2019 – Present (6 years)</div>
-
-        <h4 style="margin-top: 12px; color: #1e40af; font-size: 0.95em;">Customer-Facing AI Solutions (2021-Present)</h4>
-        <ul>
-            <li>Architected and deployed edge-cloud AI systems for enterprise customers including logistics warehouses and manufacturing facilities</li>
-            <li>Led <strong>5-person team</strong> developing <strong>7 open-source sample applications</strong> (Check Data Tool, Keypoint Detection, Object Occupancy Rate, Truck Berth DB, GUI Tool, Basic Visualization, Human Detection)</li>
-            <li>Drove international collaboration with Raspberry Pi Foundation and Sweden-based Lund AB, conducting technical discussions in English and managing OSS publication</li>
-            <li>Designed hybrid solutions integrating IMX500 AI cameras with Azure/AWS, optimizing for bandwidth efficiency and data privacy</li>
-            <li>Conducted on-site technical workshops and training for partner companies</li>
-        </ul>
-        <div class="tech-stack">
-            <span class="tech-label">Tech Stack:</span> Python, Next.js, FastAPI, PostgreSQL, IMX500, ESP32, Raspberry Pi, Azure, AWS, Docker
-        </div>
-
-        <h4 style="margin-top: 12px; color: #1e40af; font-size: 0.95em;">Edge AI Development (2019-2021)</h4>
-        <ul>
-            <li>Developed 3D pose estimation system using ToF+RGB for yoga guidance, exhibited at <strong>CES 2019</strong></li>
-            <li>Built sign language recognition system from ToF sensor images with end-to-end ML pipeline</li>
-            <li>Extended IMX500 edge AI sensor SDK and implemented embedded AI solutions</li>
-            <li>Optimized ML models for resource-constrained edge deployment</li>
-        </ul>
-        <div class="tech-stack">
-            <span class="tech-label">Key Technologies:</span> Computer Vision, TensorFlow, OpenCV, C++, embedded systems
-        </div>
-
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <span class="skill-category">AI/ML:</span> Computer Vision, Edge AI, Deep Learning (7+ years) | TensorFlow, PyTorch, OpenCV
+                <!-- Professional Experience -->
+                <section class="section">
+                    <h2>Professional Experience</h2>
+                    
+                    <!-- Sony -->
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">AI Solutions Architect</span>
+                            <span class="job-location">| Sony Semiconductor Solutions, Tokyo</span>
+                        </div>
+                        <span class="job-period">Apr 2019 - Present</span>
+                    </div>
+                    <ul>
+                        <li><strong>Directed 5-person development team</strong> to tackle edge AI constraints (IMX500's 3.09 TOPS, DNN model size restrictions), <strong>producing 7 production-ready applications adopted by enterprise customers</strong> including 7-Eleven Japan's digital signage deployment</li>
+                        <li><strong>Spearheaded 3-year logistics AI deployment</strong> addressing complex multi-stakeholder requirements (warehouse operators, truck drivers, management), <strong>delivering 4 integrated monitoring systems</strong> (dock occupancy, truck loading, entry/exit, cart status) for publicly-announced enterprise customers</li>
+                        <li><strong>Architected distributed edge-cloud hybrid solutions</strong> integrating IMX500 AI cameras with Azure/AWS, <strong>achieving scalable deployment for 2 publicly-announced enterprise clients</strong> (7-Eleven Japan, logistics warehouses)</li>
+                        <li><strong>Built end-to-end ML pipeline</strong> with automated data collection, model training, and deployment workflow, <strong>reducing development cycle time by enabling continuous improvement</strong></li>
+                        <li><strong>Established strategic international partnerships</strong> with Raspberry Pi Foundation and Sweden-based Lund AB, <strong>resulting in OSS publication that enabled global developer ecosystem</strong> around IMX500 platform</li>
+                    </ul>
+                </section>
             </div>
-            <div class="skill-item">
-                <span class="skill-category">Languages:</span> Python (6 years), JavaScript/TypeScript (3 years), C++ (2 years)
-            </div>
-            <div class="skill-item">
-                <span class="skill-category">Cloud:</span> GCP (Certified Architect), AWS (Certified Solutions Architect), Azure (AI certified) - 3 years combined
-            </div>
-            <div class="skill-item">
-                <span class="skill-category">Development:</span> Next.js, FastAPI, React, PostgreSQL, Docker, CI/CD, GitHub Actions
-            </div>
-            <div class="skill-item">
-                <span class="skill-category">Hardware:</span> IMX500, ESP32, Raspberry Pi, MEMS sensors
-            </div>
-            <div class="skill-item">
-                <span class="skill-category">Languages:</span> Japanese (Native), English (Business - TOEIC 800)
-            </div>
-        </div>
-    </div>
 
-    <!-- PAGE 2 -->
-    <div class="page">
-        <div class="page-header">
-            <h1>Satoru Akita - Page 2</h1>
-        </div>
+            <!-- Right Column (1/3) -->
+            <div class="right-column">
+                <!-- Education -->
+                <section class="section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <div class="degree">M.S. in Robotics</div>
+                        <div class="institution">Tohoku University</div>
+                        <div class="date">2017 - 2019</div>
+                        <p style="margin-top: 4px; font-size: 9.5px;">Thesis: Swarm robotics with genetic algorithms</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="degree">B.S. in Mechanical Engineering</div>
+                        <div class="institution">Tohoku University</div>
+                        <div class="date">2013 - 2017</div>
+                    </div>
+                </section>
 
-        <h2 style="margin-top: 0;">Education</h2>
-        
-        <div class="education-item">
-            <h3>Tohoku University | Sendai, Japan</h3>
-            <div class="degree">Master of Engineering in Robotics</div>
-            <div class="date">2017 – 2019</div>
-            <ul>
-                <li>Research: MEMS strain sensors using magnetostrictive materials</li>
-                <li>Published in <em>Micromachines</em> journal (2020)</li>
-                <li>Completed intensive cybersecurity (Sechack365) and ML training programs</li>
-            </ul>
-        </div>
+                <!-- Certifications -->
+                <section class="section">
+                    <h2>Certifications</h2>
+                    <div class="cert-item">
+                        <strong>Azure AI Engineer Associate</strong><br>
+                        Microsoft (2022)
+                    </div>
+                    <div class="cert-item">
+                        <strong>TOEIC Score: 800</strong><br>
+                        English proficiency (2024)
+                    </div>
+                </section>
 
-        <div class="education-item">
-            <div class="degree">Bachelor of Engineering</div>
-            <div class="date">2013 – 2017</div>
-            <ul>
-                <li>Research: Molecular robotics using DNA nanotechnology</li>
-                <li>Published in <em>Small</em> journal (2017)</li>
-                <li>Founded Whole Brain Architecture Young Researchers Association (Tohoku Chapter, 2018)</li>
-            </ul>
-        </div>
+                <!-- Awards & Publications -->
+                <section class="section">
+                    <h2>Awards & Publications</h2>
+                    <div class="award-item">
+                        <strong>Gold Medal, BIOMOD 2015</strong><br>
+                        International biomolecular design competition, Harvard University
+                    </div>
+                    <div class="award-item">
+                        <strong>Published Papers:</strong> 3 peer-reviewed papers in robotics and swarm intelligence
+                    </div>
+                </section>
 
-        <h2>Certifications</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <span class="skill-category">Cloud:</span> Google Professional Cloud Architect | AWS Solutions Architect – Associate | Azure AI Fundamentals
+                <!-- Leadership & Community -->
+                <section class="section">
+                    <h2>Leadership</h2>
+                    <div class="award-item">
+                        <strong>Founder & Organizer</strong><br>
+                        Whole Brain Architecture Young Researchers (Tohoku Chapter, 2018)
+                    </div>
+                    <div class="award-item">
+                        <strong>Technical Workshop Leader</strong><br>
+                        Conducted customer training sessions and internal technical workshops
+                    </div>
+                </section>
+
+                <!-- Interests -->
+                <section class="section">
+                    <h2>Interests</h2>
+                    <div class="interests">
+                        Distributed systems, MLOps, Edge AI optimization, Open-source contribution
+                    </div>
+                </section>
             </div>
-            <div class="skill-item">
-                <span class="skill-category">AI/ML:</span> TensorFlow Developer Certificate
-            </div>
-            <div class="skill-item">
-                <span class="skill-category">Security:</span> Information Processing Safety Support Specialist (Japan) | Fundamental IT Engineer
-            </div>
-        </div>
-
-        <h2>Awards & Publications</h2>
-        
-        <div class="award">
-            <span class="award-icon">🥇</span>
-            <span class="award-title">BIOMOD 2015 – Grand Prize (World Champion)</span> | International biomolecular design competition
-        </div>
-        
-        <div class="award">
-            <span class="award-icon">🥉</span>
-            <span class="award-title">iCAN'14 – 3rd Place Worldwide</span> | International nano/micro technology applications contest
-        </div>
-        
-        <div class="award">
-            <span class="award-icon">🧠</span>
-            <span class="award-title">Sechack365 (2017)</span> | Elite cybersecurity training program by NICT
-        </div>
-        
-        <div class="award">
-            <span class="award-icon">🚀</span>
-            <span class="award-title">SXSW Hackathon Award (2018)</span> | Corporate prize for AI life-log camera
-        </div>
-
-        <h4 style="margin-top: 18px; color: #334155; font-size: 0.95em;">Publications:</h4>
-        <ul style="margin-bottom: 25px;">
-            <li>Froemel, J., <strong>Akita, S.</strong>, et al. (2020). <em>Micromachines</em>, 11(12), 1109</li>
-            <li>Uchida, T., <strong>Akita, S.</strong>, et al. (2017). <em>Small</em>, 13(44)</li>
-        </ul>
-
-        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; font-size: 0.88em;">
-            Last Updated: February 2026 | <a href="#" onclick="window.print(); return false;" style="color: #2563eb; text-decoration: none;">Print as PDF</a>
         </div>
     </div>
 </body>
