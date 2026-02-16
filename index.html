@@ -187,14 +187,25 @@
         }
         
         /* Print Styles */
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+        
         @media print {
             body {
                 background: white;
             }
             .container {
+                max-width: 100%;
                 margin: 0;
-                padding: 20px 30px;
+                padding: 15mm 20mm;
                 box-shadow: none;
+            }
+            
+            /* Prevent page breaks inside elements */
+            .section, .job-header, .education-item, .cert-item, .award-item {
+                page-break-inside: avoid;
             }
         }
     </style>
