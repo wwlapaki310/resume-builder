@@ -6,213 +6,47 @@
     <title>秋田 賢 - AIソリューションアーキテクト 履歴書</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
-            line-height: 1.4;
-            color: #333;
-            background: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 850px;
-            margin: 20px auto;
-            background: white;
-            padding: 40px 50px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        /* Header */
-        header {
-            text-align: center;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #2c3e50;
-        }
-        
-        h1 {
-            font-size: 32px;
-            color: #2c3e50;
-            margin-bottom: 8px;
-        }
-        
-        .contact {
-            font-size: 11px;
-            color: #555;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        
-        .contact a {
-            color: #555;
-            text-decoration: none;
-        }
-        
-        .contact a:hover {
-            color: #2c3e50;
-        }
-        
-        .contact i {
-            margin-right: 4px;
-        }
-        
-        /* Two Column Layout */
-        .content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-        }
-        
-        /* Section Styles */
-        .section {
-            margin-bottom: 18px;
-        }
-        
-        h2 {
-            font-size: 14px;
-            color: #2c3e50;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 1.5px solid #3498db;
-        }
-        
-        h3 {
-            font-size: 12px;
-            color: #2c3e50;
-            margin-bottom: 4px;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 4px;
-        }
-        
-        .job-title {
-            font-size: 12px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .job-location {
-            font-size: 10px;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        
-        .job-period {
-            font-size: 10px;
-            color: #7f8c8d;
-        }
-        
-        ul {
-            margin-left: 15px;
-            margin-top: 5px;
-        }
-        
-        li {
-            font-size: 11pt;
-            margin-bottom: 3px;
-            line-height: 1.4;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 6px;
-            font-size: 11pt;
-        }
-        
-        .skill-category {
-            margin-bottom: 4px;
-        }
-        
-        .skill-category strong {
-            color: #2c3e50;
-        }
-        
-        /* Right Column */
-        .right-column {
-            font-size: 11pt;
-        }
-        
-        .right-column h3 {
-            font-size: 11px;
-            margin-bottom: 3px;
-        }
-        
-        .right-column p {
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-        
-        .education-item {
-            margin-bottom: 12px;
-        }
-        
-        .degree {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .institution {
-            color: #555;
-            font-size: 10pt;
-        }
-        
-        .date {
-            color: #7f8c8d;
-            font-size: 9pt;
-            font-style: italic;
-        }
-        
-        .cert-item, .award-item {
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-        
-        .interests {
-            font-size: 10pt;
-            color: #555;
-        }
-        
-        /* Print Styles */
-        @page {
-            size: A4;
-            margin: 15mm;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; line-height: 1.4; color: #333; background: #f5f5f5; }
+        .container { max-width: 850px; margin: 20px auto; background: white; padding: 40px 50px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        header { text-align: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 2px solid #2c3e50; }
+        h1 { font-size: 32px; color: #2c3e50; margin-bottom: 8px; }
+        .contact { font-size: 11px; color: #555; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .contact a { color: #555; text-decoration: none; }
+        .contact a:hover { color: #2c3e50; }
+        .contact i { margin-right: 4px; }
+        .content { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        .section { margin-bottom: 18px; }
+        h2 { font-size: 14px; color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1.5px solid #3498db; }
+        h3 { font-size: 12px; color: #2c3e50; margin-bottom: 4px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+        .job-title { font-size: 12px; font-weight: bold; color: #2c3e50; }
+        .job-location { font-size: 10px; color: #7f8c8d; font-style: italic; }
+        .job-period { font-size: 10px; color: #7f8c8d; }
+        ul { margin-left: 15px; margin-top: 5px; }
+        li { font-size: 11pt; margin-bottom: 3px; line-height: 1.4; }
+        .skills-grid { display: grid; grid-template-columns: 1fr; gap: 6px; font-size: 11pt; }
+        .skill-category { margin-bottom: 4px; }
+        .skill-category strong { color: #2c3e50; }
+        .right-column { font-size: 11pt; }
+        .right-column h3 { font-size: 11px; margin-bottom: 3px; }
+        .right-column p { margin-bottom: 8px; line-height: 1.3; }
+        .education-item { margin-bottom: 12px; }
+        .degree { font-weight: bold; color: #2c3e50; }
+        .institution { color: #555; font-size: 10pt; }
+        .date { color: #7f8c8d; font-size: 9pt; font-style: italic; }
+        .cert-item, .award-item { margin-bottom: 8px; line-height: 1.3; }
+        .interests { font-size: 10pt; color: #555; }
+        @page { size: A4; margin: 15mm; }
         @media print {
-            body {
-                background: white;
-            }
-            .container {
-                max-width: 100%;
-                margin: 0;
-                padding: 15mm 20mm;
-                box-shadow: none;
-            }
-            
-            /* Prevent page breaks inside elements */
-            .section, .job-header, .education-item, .cert-item, .award-item {
-                page-break-inside: avoid;
-            }
+            body { background: white; }
+            .container { max-width: 100%; margin: 0; padding: 15mm 20mm; box-shadow: none; }
+            .section, .job-header, .education-item, .cert-item, .award-item { page-break-inside: avoid; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
         <header>
             <h1>秋田 賢 (Satoru Akita)</h1>
             <div class="contact">
@@ -223,26 +57,21 @@
             </div>
         </header>
 
-        <!-- Two Column Content -->
         <div class="content">
-            <!-- Left Column (2/3) -->
             <div class="left-column">
-                <!-- Technical Skills -->
                 <section class="section">
-                    <h2>技術スキル</h2>
+                    <h2>スキル</h2>
                     <div class="skills-grid">
                         <div class="skill-category"><strong>プログラミング言語:</strong> Python, C/C++, TypeScript, JavaScript, Bash</div>
                         <div class="skill-category"><strong>機械学習・AI:</strong> PyTorch, TensorFlow, OpenCV, MediaPipe, エッジAI最適化</div>
                         <div class="skill-category"><strong>クラウド・インフラ:</strong> Azure, AWS, Docker, CI/CD, MLOpsパイプライン</div>
                         <div class="skill-category"><strong>専門分野:</strong> コンピュータビジョン, エッジ-クラウドハイブリッドシステム, 分散アーキテクチャ, データ構造・アルゴリズム</div>
+                        <div class="skill-category"><strong>ビジネス:</strong> 現場訪問による課題発見・要件定義, 顧客対応・折衝, テクニカルイベント運営</div>
                     </div>
                 </section>
 
-                <!-- Professional Experience -->
                 <section class="section">
                     <h2>職務経歴</h2>
-                    
-                    <!-- Sony -->
                     <div class="job-header">
                         <div>
                             <span class="job-title">AIソリューションアーキテクト</span>
@@ -260,9 +89,7 @@
                 </section>
             </div>
 
-            <!-- Right Column (1/3) -->
             <div class="right-column">
-                <!-- Education -->
                 <section class="section">
                     <h2>学歴</h2>
                     <div class="education-item">
@@ -279,11 +106,10 @@
                     </div>
                 </section>
 
-                <!-- Certifications -->
                 <section class="section">
                     <h2>資格</h2>
                     <div class="cert-item">
-                        <strong>Google Cloud Professional Architect</strong>
+                        <strong>Google Certified Professional - Cloud Architect</strong>
                     </div>
                     <div class="cert-item">
                         <strong>AWS Solutions Architect - Associate</strong>
@@ -299,7 +125,6 @@
                     </div>
                 </section>
 
-                <!-- Awards & Publications -->
                 <section class="section">
                     <h2>受賞・論文発表</h2>
                     <div class="award-item">
@@ -319,7 +144,6 @@
                     </div>
                 </section>
 
-                <!-- Leadership & Community -->
                 <section class="section">
                     <h2>リーダーシップ</h2>
                     <div class="award-item">
@@ -340,7 +164,6 @@
                     </div>
                 </section>
 
-                <!-- Interests -->
                 <section class="section">
                     <h2>関心分野</h2>
                     <div class="interests">
