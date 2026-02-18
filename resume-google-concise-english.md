@@ -52,10 +52,9 @@ AI Solutions Architect with **7+ years ML/AI experience** specializing in edge-c
 **Tohoku University** | Sendai, Japan
 
 **Master of Engineering in Robotics** | *2017 – 2019*
-- MEMS strain/pressure sensor research: full fabrication cycle (sputtering, photolithography, etching) in cleanroom using semiconductor processes
-- Collected and analyzed sensor characterization data; applied statistical processing and visualization to drive design improvements
-- Completed intensive ML training program; applied ML to sensor data (feature extraction, classification)
-- Published in *Micromachines* (2020); completed Sechack365 cybersecurity program
+- Researched MEMS sensors using magnetostrictive materials with semiconductor fabrication processes
+- Applied data utilization and machine learning (incl. Sechack365 program)
+- Published in *Micromachines* (2020)
 
 **Bachelor of Engineering** | *2013 – 2017*  
 - Research: Molecular robotics using DNA nanotechnology  
