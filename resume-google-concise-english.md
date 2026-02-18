@@ -79,8 +79,8 @@ AI Solutions Architect with **7+ years ML/AI experience** specializing in edge-c
 🚀 **SXSW Hackathon Award (2018)** | Corporate prize for AI life-log camera
 
 **Publications:**
-- Froemel, J., **Akita, S.**, et al. (2020). [Simple Device to Measure Pressure Using the Stress Impedance Effect of Amorphous Soft Magnetic Thin Film](https://www.mdpi.com/2072-666X/11/7/649). *Micromachines*
-- Uchida, T., **Akita, S.**, et al. (2017). [Revolving Vernier Mechanism Controls Size of Linear Homomultimer](https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.201702158). *Small*
+- Froemel, J., **Akita, S.**, et al. (2020). [Simple Device to Measure Pressure Using the Stress Impedance Effect of Amorphous Soft Magnetic Thin Film](https://www.mdpi.com/2072-666X/11/7/649). *Micromachines* (MDPI)
+- Uchida, T., **Akita, S.**, et al. (2017). [Revolving Vernier Mechanism Controls Size of Linear Homomultimer](https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.201702158). *Small* (Wiley)
 
 ---
 
