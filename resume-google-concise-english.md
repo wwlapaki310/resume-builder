@@ -49,13 +49,13 @@ AI Solutions Architect with **7+ years ML/AI experience** specializing in edge-c
 
 ## Education
 
-**Tohoku University** | Sendai, Japan
+**Tohoku University** | Sendai, Japan | M.Eng. *2017–2019* / B.Eng. *2013–2017*
 
-**Master of Engineering in Robotics** | *2017 – 2019*
+**Master of Engineering in Robotics**
 - MEMS sensors, semiconductor processes, data utilization, machine learning
 
-**Bachelor of Engineering** | *2013 – 2017*  
-- Research: Molecular robotics using DNA nanotechnology  
+**Bachelor of Engineering**
+- Research: Molecular robotics using DNA nanotechnology
 - Published in *Small* journal (2017)
 - Founded Whole Brain Architecture Young Researchers Association (Tohoku Chapter, 2018)
 
