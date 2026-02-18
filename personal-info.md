@@ -121,7 +121,7 @@
 
 ## 受賞歴・活動
 
-### 🥇 BIOMOD 2015 – Grand Prize (世界1位)
+### 🥇 BIOMOD 2015 – Grand Prize
 学部生向け国際バイオ分子設計コンテスト
 DNAを使った合成分子ロボットの設計で世界1位を獲得
 [Link to results](https://biomod2015.wordpress.com/award-results/)
