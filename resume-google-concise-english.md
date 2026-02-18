@@ -78,9 +78,9 @@ AI Solutions Architect with **7+ years ML/AI experience** specializing in edge-c
 🧠 **Sechack365 (2017)** | Elite cybersecurity training program by NICT  
 🚀 **SXSW Hackathon Award (2018)** | Corporate prize for AI life-log camera
 
-**Publications:**  
-- Froemel, J., **Akita, S.**, et al. (2020). *Micromachines*, 11(12), 1109  
-- Uchida, T., **Akita, S.**, et al. (2017). *Small*, 13(44)
+**Publications:**
+- Froemel, J., **Akita, S.**, et al. (2020). [Simple Device to Measure Pressure Using the Stress Impedance Effect of Amorphous Soft Magnetic Thin Film](https://www.mdpi.com/2072-666X/11/7/649). *Micromachines*
+- Uchida, T., **Akita, S.**, et al. (2017). [Revolving Vernier Mechanism Controls Size of Linear Homomultimer](https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.201702158). *Small*
 
 ---
 
