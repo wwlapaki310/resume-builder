@@ -53,7 +53,6 @@ AI Solutions Architect with **7+ years ML/AI experience** specializing in edge-c
 
 **Master of Engineering in Robotics** | *2017 – 2019*
 - MEMS sensors, semiconductor processes, data utilization, machine learning
-- Published in *Micromachines* (2020)
 
 **Bachelor of Engineering** | *2013 – 2017*  
 - Research: Molecular robotics using DNA nanotechnology  
