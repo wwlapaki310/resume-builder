@@ -1,7 +1,7 @@
 # Satoru Akita
 **AI Solutions Architect | Edge AI & Cloud Integration Specialist**
 
-📧 wwlap24@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/satoru-akita-6070a4145/) | 💻 [Portfolio](https://wwlapaki310.github.io/) | 📝 [Blog](https://akisatooo.hatenablog.com/)  
+📧 wwlap24@gmail.com | 📞 070-4157-2275 | 🔗 [LinkedIn](https://www.linkedin.com/in/satoru-akita-6070a4145/) | 💻 [Portfolio](https://wwlapaki310.github.io/) | 📝 [Blog](https://akisatooo.hatenablog.com/)
 📍 Greater Tokyo Area, Japan
 
 ---
