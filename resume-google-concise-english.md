@@ -52,8 +52,7 @@ AI Solutions Architect with **7+ years ML/AI experience** specializing in edge-c
 **Tohoku University** | Sendai, Japan
 
 **Master of Engineering in Robotics** | *2017 – 2019*
-- Researched MEMS sensors using magnetostrictive materials with semiconductor fabrication processes
-- Applied data utilization and machine learning (incl. Sechack365 program)
+- MEMS sensors, semiconductor processes, data utilization, machine learning
 - Published in *Micromachines* (2020)
 
 **Bachelor of Engineering** | *2013 – 2017*  

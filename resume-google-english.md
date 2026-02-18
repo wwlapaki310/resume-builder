@@ -118,8 +118,7 @@ Solution-oriented AI Engineer with **7+ years of ML/AI experience** and proven e
 **Tohoku University** | Sendai, Japan
 
 **Master of Engineering in Robotics** | *April 2017 – March 2019*
-- Researched MEMS sensors using magnetostrictive materials with semiconductor fabrication processes
-- Applied data analysis and completed machine learning training program (incl. Sechack365)
+- MEMS sensors, semiconductor processes, data utilization, machine learning
 - Published in peer-reviewed international journal: *Micromachines* (2020)
 - Internships: Sony, Mercari, B.U.G.
 
