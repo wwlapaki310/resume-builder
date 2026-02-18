@@ -3,6 +3,7 @@
 ## 基本情報
 - 氏名：秋田 悟（Satoru Akita）
 - Email：wwlap24@gmail.com
+- 電話番号：070-4157-2275
 - LinkedIn：https://www.linkedin.com/in/satoru-akita-6070a4145/
 - GitHub/Portfolio：https://wwlapaki310.github.io/
 - Twitter/X：https://x.com/fox_aki310ooooo

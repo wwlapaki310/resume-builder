@@ -1,7 +1,7 @@
 # Satoru Akita
 **AI Solutions Architect | 7+ Years ML/AI Experience**
 
-📧 wwlap24@gmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/satoru-akita-6070a4145/) | 💻 [GitHub](https://github.com/wwlapaki310) | 📝 [Blog](https://akisatooo.hatenablog.com/)  
+📧 wwlap24@gmail.com | 📞 070-4157-2275 | 🔗 [LinkedIn](https://www.linkedin.com/in/satoru-akita-6070a4145/) | 💻 [GitHub](https://github.com/wwlapaki310) | 📝 [Blog](https://akisatooo.hatenablog.com/)
 📍 Greater Tokyo Area, Japan
 
 ---

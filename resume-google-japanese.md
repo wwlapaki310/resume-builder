@@ -2,8 +2,9 @@
 
 ## 基本情報
 
-**氏名**: 秋田 悟（あきた さとる）  
-**メール**: wwlap24@gmail.com  
+**氏名**: 秋田 悟（あきた さとる）
+**メール**: wwlap24@gmail.com
+**電話**: 070-4157-2275
 **LinkedIn**: https://www.linkedin.com/in/satoru-akita-6070a4145/  
 **ポートフォリオ**: https://wwlapaki310.github.io/  
 **技術ブログ**: https://akisatooo.hatenablog.com/  
