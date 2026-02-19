@@ -18,6 +18,7 @@
         .section { margin-bottom: 18px; }
         h2 { font-size: 14px; color: #2c3e50; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1.5px solid #3498db; }
         h3 { font-size: 12px; color: #2c3e50; margin-bottom: 4px; }
+        .job-group { font-size: 11.5px; font-weight: bold; color: #2c3e50; margin-top: 7px; margin-bottom: 2px; }
         .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
         .job-title { font-size: 13.5px; font-weight: bold; color: #2c3e50; text-decoration: underline; }
         .job-location { font-size: 10px; color: #7f8c8d; font-style: italic; }
@@ -36,30 +37,31 @@
         .date { color: #7f8c8d; font-size: 9pt; font-style: italic; }
         .cert-item, .award-item { margin-bottom: 8px; line-height: 1.3; }
         .interests { font-size: 10pt; color: #555; }
-        @page { size: A4; margin: 6mm 9mm; }
+        @page { size: A4; margin: 5mm 8mm; }
         @media print {
             body { background: white; }
             .container { max-width: 100%; margin: 0; padding: 0; box-shadow: none; }
             .section, .job-header, .education-item, .cert-item, .award-item { page-break-inside: avoid; }
-            header { margin-bottom: 9px; padding-bottom: 6px; }
-            h1 { font-size: 30px; }
-            .contact { font-size: 10.5px; gap: 11px; }
-            h2 { font-size: 12.5px; margin-bottom: 7px; padding-bottom: 4px; }
-            .section { margin-bottom: 8px; }
-            .content { gap: 18px; }
-            li { font-size: 9.5pt; line-height: 1.28; margin-bottom: 2px; }
-            ul { margin-left: 13px; margin-top: 3px; }
-            .skills-grid { gap: 3px; font-size: 9.5pt; }
+            header { margin-bottom: 7px; padding-bottom: 5px; }
+            h1 { font-size: 29px; }
+            .contact { font-size: 10px; gap: 10px; }
+            h2 { font-size: 12px; margin-bottom: 6px; padding-bottom: 3px; }
+            .section { margin-bottom: 7px; }
+            .content { gap: 16px; }
+            li { font-size: 9pt; line-height: 1.24; margin-bottom: 1px; }
+            ul { margin-left: 12px; margin-top: 2px; }
+            .skills-grid { gap: 2px; font-size: 9pt; }
             .skill-category { margin-bottom: 2px; }
-            .job-title { font-size: 12px; }
-            .award-item, .cert-item { margin-bottom: 4px; line-height: 1.22; }
-            .award-item { font-size: 9.5pt; }
-            .cert-item { font-size: 9.5pt; }
-            .education-item { margin-bottom: 6px; }
-            .right-column { font-size: 9.5pt; }
-            .right-column h3 { font-size: 9.5px; }
-            .right-column p { margin-bottom: 2px; line-height: 1.2; font-size: 9pt; }
+            .job-title { font-size: 11.5px; }
+            .award-item, .cert-item { margin-bottom: 3px; line-height: 1.2; }
+            .award-item { font-size: 9pt; }
+            .cert-item { font-size: 9pt; }
+            .education-item { margin-bottom: 5px; }
+            .right-column { font-size: 9pt; }
+            .right-column h3 { font-size: 9px; }
+            .right-column p { margin-bottom: 2px; line-height: 1.18; font-size: 8.5pt; }
             .job-header { margin-bottom: 2px; }
+            .job-group { font-size: 9px; margin-top: 3px; margin-bottom: 0px; }
         }
     </style>
 </head>
@@ -103,16 +105,28 @@
                     <!-- Phase 3 -->
                     <div class="job-header">
                         <div>
-                            <span class="job-title">AI Solutions Architect</span>
+                            <span class="job-title">AI Solutions Engineer / Architect</span>
                             <span class="job-location">| Sony Semiconductor Solutions, Tokyo</span>
                         </div>
                         <span class="job-period">Jan 2023 – Present</span>
                     </div>
+                    <p class="job-group">Edge AI Sample Applications</p>
                     <ul>
-                        <li><strong>Led development and OSS publication of 9 AITRIOS sample applications</strong>, showcased in 2 exhibitions, 3 national project demos, and 5+ enterprise technical briefings, serving as reference implementations for enterprise AI development</li>
-                        <li><strong>Architected and deployed edge–cloud pilot systems</strong> using AITRIOS-compatible cameras (including IMX500), designing NAS storage, PoE switching, LTE connectivity, and secure remote access architectures</li>
-                        <li><strong>Designed and deployed multi-camera edge AI systems across 12 customer deployments</strong>, including 30-camera distributed architectures (3 environments), 10-camera vehicle detection systems (4 deployments), 8-camera shelf monitoring systems (2 deployments), and 2-camera truck cargo monitoring systems (3 deployments)</li>
-                        <li><strong>Developed AITRIOS MCP server prototype</strong> and demonstrated LLM-assisted API migration (V1→V2), <strong>automating ~80% of repetitive code updates</strong> through structured prompt engineering</li>
+                        <li>Led a 6-engineer team to develop <strong>9 enterprise-grade Edge AI sample apps</strong>, adopted in exhibitions, national demos, and enterprise briefings.</li>
+                        <li>Released cross-border OSS project <strong>(Raspberry AI Camera)</strong> in collaboration with Lund (Sweden) and Raspberry Pi Foundation.</li>
+                        <li>Improved cloud integration reliability via REST API–based sample apps with Midokura (Spain).</li>
+                    </ul>
+                    <p class="job-group">Edge–Cloud AI Deployment</p>
+                    <ul>
+                        <li>Led software implementation of distributed AI systems, coordinating <strong>5 engineers and 5 cross-functional members</strong> (sales, electrical, client support).</li>
+                        <li>Deployed <strong>multi-camera edge–cloud AI systems (10+ cameras per site)</strong> adapting to bandwidth, device compute limits, and environmental constraints.</li>
+                        <li>Delivered AI solutions: vehicle license plate recognition, digital signage impact measurement, shelf vacancy detection, and in-store traffic heatmap visualization.</li>
+                        <li>Enabled enterprise AI engagements across <strong>8+ major clients</strong> (logistics, retail, mobility).</li>
+                    </ul>
+                    <p class="job-group">Generative AI &amp; Engineering Productivity</p>
+                    <ul>
+                        <li>Led development of internal <strong>generative AI MCP server</strong>, building prototypes, demos, and a 5-engineer team to release production-ready OSS code.</li>
+                        <li><strong>Reduced API migration workload by 80%</strong> (V1→V2) using LLM-assisted automation scripts.</li>
                     </ul>
 
                     <!-- Phase 2 -->
