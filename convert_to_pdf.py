@@ -197,8 +197,9 @@ def convert(input_path: str, output_path: str) -> None:
     ext = input_path.rsplit(".", 1)[-1].lower()
 
     if ext in ("html", "htm"):
-        html = input_path  # pass file path directly
-        HTML(filename=html).write_pdf(output_path, stylesheets=[CSS(string=STYLE)])
+        # Use the HTML file's own styles as-is; do not apply the Markdown STYLE
+        # so the page design, colors, and layout are preserved exactly.
+        HTML(filename=input_path).write_pdf(output_path)
     else:
         with open(input_path, encoding="utf-8") as f:
             md_text = f.read()
